@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 
-@Database(entities = [Student:: class], version = 1)
+@Database(entities = [Student:: class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase(){
 
     abstract fun studentDao(): StudentDao

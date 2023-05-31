@@ -1,5 +1,6 @@
  package com.lahiru.roomdb2
 
+import android.app.Application
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings.Global
@@ -18,6 +19,8 @@ import kotlinx.coroutines.withContext
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        appDb = AppDatabase.getDatabase(this)
         binding.btnWriteData.setOnClickListener {
             writeData()
         }
