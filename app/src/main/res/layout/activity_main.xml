@@ -61,9 +61,10 @@
         android:id="@+id/btn_write_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:text="Write Data"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_roll_no" />
 
@@ -132,5 +133,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnReadData"
         app:layout_constraintTop_toTopOf="@+id/btnReadData" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="127dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="51dp"
+        android:text="Update Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_write_data"
+        app:layout_constraintTop_toBottomOf="@+id/et_roll_no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
